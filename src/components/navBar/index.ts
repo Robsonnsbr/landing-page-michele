@@ -1,4 +1,3 @@
 import { NavBar } from './NavBar';
-import { NavBarMobile } from './NavBarMobile';
 
-export { NavBar, NavBarMobile };
+export { NavBar };

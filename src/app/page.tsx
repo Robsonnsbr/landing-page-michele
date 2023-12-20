@@ -1,5 +1,5 @@
 import { SectionSlider, SectionInfo } from 'src/components/sections/home';
-import { NavBarMobile } from 'src/components/navBar';
+import { NavBarMobile } from 'src/components/mobile';
 
 export default function Home() {
   return (

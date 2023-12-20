@@ -9,12 +9,18 @@ import Image from 'next/image';
 function ListIcons() {
   return (
     <ul
-      className="grid grid-cols-4 items-center"
+      className="grid grid-cols-4 items-center pb-2"
       style={{ marginRight: '-6%' }}
     >
       <li className="flex justify-center">
         <Link href="/">
-          <Image src={youtubeIcon} width={50} height={40} alt="ícone youtube" />
+          <Image
+            src={youtubeIcon}
+            width={50}
+            height={40}
+            alt="ícone youtube"
+            style={{ width: 50, height: 40 }}
+          />
         </Link>
       </li>
       <li className="flex justify-center">
@@ -34,6 +40,7 @@ function ListIcons() {
             width={24}
             height={40}
             alt="ícone facebook"
+            style={{ width: 'auto', height: 'auto' }}
           />
         </Link>
       </li>

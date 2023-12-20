@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import SelectLang from './SelectLang';
+import ListIcons from './ListIcons';
 
 function Footer(props: { className: string }) {
   return (
@@ -8,13 +9,13 @@ function Footer(props: { className: string }) {
         <li>
           <ul className="md:grid text-center md:text-left gap-6">
             <li>
-              <h2 className="text-5xl">agência</h2>
+              <h2 className="text-5xl">Agendamentos</h2>
             </li>
             <li>
               <p className="whitespace-nowrap">0800 800 800</p>
             </li>
             <li>
-              <p>comercial@agencia.com.br</p>
+              <p>drmichelle@atendimento.com.br</p>
             </li>
           </ul>
         </li>{' '}
@@ -72,7 +73,9 @@ function Footer(props: { className: string }) {
             <li>
               <h3 className="text-primaryColor pl-5">SOCIAL</h3>
             </li>
-            <li>{/* <ListIcons /> */}</li>
+            <li>
+              <ListIcons />
+            </li>
           </ul>
         </li>
       </ul>

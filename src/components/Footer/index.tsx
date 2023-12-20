@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import SelectLang from './SelectLang';
-import ListIcons from './ListIcons';
 
 function Footer(props: { className: string }) {
   return (
-    <footer className={`${props.className} flex`}>
-      <ul className="grid grid-cols-1 md:grid-cols-4  w-full justify-between pt-16">
+    <footer className={`${props.className} flex justify-center`}>
+      <ul className="grid grid-cols-1 md:grid-cols-4  sm:max-w-[80%] justify-between pt-16">
         <li>
           <ul className="md:grid text-center md:text-left gap-6">
             <li>

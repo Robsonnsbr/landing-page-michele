@@ -1,23 +1,23 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import {
-  SectionContact,
-  SectionInfo,
-  SectionLeads
-} from '@/components/sections';
+import { SectionSlider, SectionInfo } from 'src/components/sections/home';
+import { NavBarMobile } from 'src/components/navBar';
 
 export default function Home() {
   return (
-    <div className="Wrapper-container">
-      <Header className="class-Header" />
-      <main className="class-Main md:pt-28 md: pb-28">
-        <div className="grid grid-auto-rows-auto gap-36">
-          <section>{/* <SectionLeads /> */}</section>
-          <section>{/* <SectionInfo /> */}</section>
-          <section>{/* <SectionContact /> */}</section>
-        </div>
-      </main>
-      <Footer className="class-Footer" />
-    </div>
+    <main className="class-Main">
+      <NavBarMobile />
+      <h5 className="text-2xl text-thirdColor pt-4">
+        Sua melhor aparência faz você se sentir bem
+      </h5>
+      <div className="grid grid-auto-rows-auto gap-4 pt-14">
+        <section>
+          <div>
+            <SectionSlider />
+          </div>
+        </section>
+        <section>
+          <SectionInfo />
+        </section>
+      </div>
+    </main>
   );
 }

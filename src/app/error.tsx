@@ -11,7 +11,7 @@ interface IPropsError {
 export default function Error({ error, reset }: IPropsError) {
   useEffect(() => {
     console.log(error);
-  }, []);
+  }, [error]);
 
   return (
     <div>

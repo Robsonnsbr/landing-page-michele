@@ -19,7 +19,8 @@ const config: Config = {
       colors: {
         primaryColor: '#9FA4A5',
         secondaryColor: '#1783B5',
-        thirdColor: '#527AA4'
+        thirdColor: '#527AA4',
+        readingText: '#007A97'
       }
     }
   },

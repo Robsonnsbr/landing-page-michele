@@ -13,12 +13,12 @@ export const NavBarMobile = () => {
   return (
     <nav className="flex justify-end w-full pr-2 sticky top-0 z-10">
       <ButtonNavMobile isOpen={isOpen} handleClick={handleClick}>
-        <div className="absolute translate-y-40 -translate-x-5">
+        <div className={styleMenuButton}>
           {isOpen && (
-            <ul className="flex-col sm:grid grid-cols-7 w-full text-right">
+            <ul className="flex-col sm:grid grid-cols-7 w-full text-center ring-2">
               <li className="p-1">
                 <Link className="text-base hover:text-blue-400" href="/">
-                  Início
+                  <p>Início</p>
                 </Link>
               </li>
               <li className="p-1">
@@ -61,3 +61,6 @@ export const NavBarMobile = () => {
     </nav>
   );
 };
+
+const styleMenuButton = `
+absolute translate-y-36 -translate-x-4  bg-black bg-opacity-25  z-10`;

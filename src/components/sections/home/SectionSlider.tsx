@@ -52,20 +52,27 @@ const SwiperCarousel = () => {
 
   return (
     <div
-      className="mx-auto overflow-x-hidden"
-      style={{ maxWidth: viewportSize.width - 17 }}
+      className="flex mx-auto overflow-hidden"
+      style={{
+        maxWidth: viewportSize.width,
+        minHeight: 'auto',
+        maxHeight: 280
+      }}
     >
       <Swiper {...swiperParams} modules={[Navigation, Autoplay]}>
         <SwiperSlide>
-          <div className="w-full">
+          <div className="w-full h-full overflow-hidden">
             <Image
               src={image4}
               width={1920}
               height={1080}
               alt="image1"
+              placeholder="blur"
+              loading="lazy"
               style={{
                 width: '100%',
-                height: 280,
+                minHeight: 'auto',
+                maxHeight: 280,
                 objectFit: 'cover'
               }}
             />
@@ -77,10 +84,13 @@ const SwiperCarousel = () => {
               src={image5}
               width={1920}
               height={1080}
+              placeholder="blur"
+              loading="lazy"
               alt="image4"
               style={{
                 width: '100%',
-                height: 280,
+                minHeight: 'auto',
+                maxHeight: 280,
                 objectFit: 'cover'
               }}
             />
@@ -92,10 +102,13 @@ const SwiperCarousel = () => {
               src={image6}
               width={1920}
               height={1080}
+              placeholder="blur"
+              loading="lazy"
               alt="image4"
               style={{
                 width: '100%',
-                height: 280,
+                minHeight: 'auto',
+                maxHeight: 280,
                 objectFit: 'cover'
               }}
             />

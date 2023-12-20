@@ -27,9 +27,10 @@ function ListIcons() {
         <Link href="/">
           <Image
             src={instagramIcon}
-            width={40}
+            width={50}
             height={40}
             alt="ícone instagram"
+            style={{ width: 50, height: 40 }}
           />
         </Link>
       </li>
@@ -37,10 +38,10 @@ function ListIcons() {
         <Link href="/">
           <Image
             src={facebookIcon}
-            width={24}
+            width={50}
             height={40}
             alt="ícone facebook"
-            style={{ width: 'auto', height: 'auto' }}
+            style={{ width: 50, height: 40 }}
           />
         </Link>
       </li>
@@ -48,9 +49,10 @@ function ListIcons() {
         <Link href="/">
           <Image
             src={linkedinIcon}
-            width={40}
+            width={50}
             height={40}
             alt="ícone linkedin"
+            style={{ width: 50, height: 40 }}
           />
         </Link>
       </li>

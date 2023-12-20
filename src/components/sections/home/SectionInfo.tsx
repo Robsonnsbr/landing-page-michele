@@ -12,12 +12,12 @@ const SectionInfo = () => {
   return (
     <>
       <div className="m-auto pl-2 pr-2 sm:max-w-[80%] md:max-w-[70%]">
-        <ul className="flex-col grid md:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-2 sm:gap-8">
+        <ul className="flex-col sm:grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-2 sm:gap-8">
           <li className="col-span-1 row-span-1">
             <div className=" w-full h-fit ">
               <Line />
               <p className="p-2">Bem-Vindos</p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-readingText">
                 Informações sobre tratamentos ortodônticos, aparelhos,
                 alinhadores e muito mais. Opções para realizar seus sonhos de um
                 sorriso perfeito, com segurança e qualidade. Proporcionamos uma
@@ -36,6 +36,8 @@ const SectionInfo = () => {
                   src={imageInfo4}
                   width={700}
                   height={700}
+                  placeholder="blur"
+                  loading="lazy"
                   alt="imagem tratamento"
                   style={{
                     width: 'auto',
@@ -55,6 +57,8 @@ const SectionInfo = () => {
                   src={imageInfo1}
                   width={700}
                   height={700}
+                  placeholder="blur"
+                  loading="lazy"
                   alt="imagem tratamento"
                   style={{
                     width: '100%',
@@ -74,6 +78,8 @@ const SectionInfo = () => {
                   src={imageInfo3}
                   width={700}
                   height={700}
+                  placeholder="blur"
+                  loading="lazy"
                   alt="imagem tratamento"
                   style={{
                     width: 'auto',
@@ -93,6 +99,8 @@ const SectionInfo = () => {
                   src={imageInfo2}
                   width={500}
                   height={500}
+                  placeholder="blur"
+                  loading="lazy"
                   alt="imagem tratamento"
                   style={{
                     width: '100%',

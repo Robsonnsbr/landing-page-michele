@@ -18,10 +18,10 @@ export const ButtonNavMobile: React.FC<ButtonNavMobileProps> = ({
 ${
   isOpen
     ? `flex sm:hidden relative  flex-col h-12 w-12 
-border-2 rounded-sm border-activeColor border-opacity-50 
-bg-primaryColor bg-opacity-25 justify-center items-center group z-10`
+border-2 rounded-sm border-secondaryActiveColor border-opacity-100 
+bg-primaryColor bg-opacity-50 justify-center items-center group z-10`
     : `flex sm:hidden relative  flex-col h-12 w-12 
-border-2 rounded-sm border-black border-opacity-50 
+border-2 rounded-sm border-black border-opacity-30 hover:border-opacity-70
 bg-black bg-opacity-25 justify-center items-center group z-10`
 }`;
 
@@ -30,20 +30,20 @@ bg-black bg-opacity-25 justify-center items-center group z-10`
       <div
         className={`${genericHamburgerLine} ${
           isOpen
-            ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-70 bg-primaryColor'
-            : 'opacity-50 group-hover:opacity-70'
+            ? 'rotate-45 translate-y-3 opacity-30 group-hover:opacity-80 bg-slate-600'
+            : 'opacity-30 group-hover:opacity-70'
         }`}
       />
       <div
         className={`${genericHamburgerLine} ${
-          isOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-70'
+          isOpen ? 'opacity-0' : 'opacity-30 group-hover:opacity-70'
         }`}
       />
       <div
         className={`${genericHamburgerLine} ${
           isOpen
-            ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-70 bg-primaryColor'
-            : 'opacity-50 group-hover:opacity-70'
+            ? '-rotate-45 -translate-y-3 opacity-30 group-hover:opacity-70 bg-slate-600'
+            : 'opacity-30 group-hover:opacity-80'
         }`}
       />
       {children}

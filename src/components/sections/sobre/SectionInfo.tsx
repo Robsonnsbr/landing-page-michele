@@ -15,6 +15,8 @@ const SectionInfo = () => {
                 src={imagemMichele}
                 width={500}
                 height={500}
+                placeholder="blur"
+                loading="lazy"
                 style={{ width: '100%', height: '100%' }}
                 alt={'imagem-michele'}
               />

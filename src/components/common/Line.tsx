@@ -1,9 +1,11 @@
-import React from 'react';
+interface LineProps {
+  style?: string;
+}
 
-const Line = () => {
+const Line: React.FC<LineProps> = ({ style = 'bg-slate-600' }) => {
   return (
-    <div className="flex w-full h-1 bg-slate-600 relative justify-end">
-      <div className="w-3 h-3 bg-slate-600 relative">
+    <div className={`${style} flex w-full h-1 relative justify-end`}>
+      <div className={`${style} w-3 h-3 relative`}>
         <div className="line"></div>
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function Header(props: { className: string }) {
           </div>
         </li>
         <li>
-          <div className="flex items-center justify-center pb-10">
+          <div className="flex items-center justify-center pb-5">
             <Image
               src={logo}
               width={400}

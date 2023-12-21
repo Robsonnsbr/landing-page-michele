@@ -1,10 +1,10 @@
 import { SectionSlider, SectionInfo } from 'src/components/sections/home';
-import { NavBarMobile } from 'src/components/mobile';
+// import { NavBarMobile } from 'src/components/mobile';
 
 export default function Home() {
   return (
     <main className="class-Main">
-      <NavBarMobile />
+      {/* <NavBarMobile /> */}
       <h5 className="text-2xl text-thirdColor pt-4 px-1 sm:px-0">
         Sua melhor aparência faz você se sentir bem
       </h5>

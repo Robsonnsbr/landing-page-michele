@@ -8,6 +8,7 @@ import Footer from 'src/components/Footer';
 const raleway = Raleway({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
 import '@/styles/globals.css';
+import { NavBarMobile } from 'src/components/mobile';
 
 interface children {
   children: React.ReactNode;
@@ -40,9 +41,8 @@ export default function RootLayout({ children }: children) {
         <MobileProvider>
           <div className="Wrapper-container">
             <Header className="class-Header" />
-
+            <NavBarMobile />
             {children}
-
             <Footer className="class-Footer" />
           </div>
         </MobileProvider>

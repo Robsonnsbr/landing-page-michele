@@ -40,11 +40,11 @@ body {
   --primary-background: #FFF;
   --primary-background-footer: #8ADDF0;
 
-  --primary-color: #FFFFFF;
+  --primary-color: hsl(0, 0%, 100%);
 }
 
 .Wrapper-container {
-  background-color: #C9C9C9;
+  background-color: #fff;
   min-width: 100%;
   min-height: 100%;
   text-align: center;

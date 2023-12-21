@@ -18,7 +18,7 @@ const styleNavMobileActive = `top-0
 export const ModalMobile = ({ isOpen }: ModalMobileProps) => {
   return (
     <nav className={isOpen ? styleNavMobileActive : styleNavMobileDisable}>
-      <ul className="flex-col sm:grid grid-cols-7 w-full text-center border-2 rounded-sm border-secondaryActiveColor">
+      <ul className="flex-col sm:grid grid-cols-7 w-full text-center border-2rounded-sm border-secondaryActiveColor">
         <li className="p-1">
           <Link className="text-lg font-semibold hover:text-blue-400" href="/">
             <p>Início</p>
@@ -27,33 +27,48 @@ export const ModalMobile = ({ isOpen }: ModalMobileProps) => {
         <li className="p-1">
           <Link
             className="text-lg font-semibold hover:text-blue-400 whitespace-nowrap"
-            href="/"
+            href="/Sobre"
           >
             Sobre
           </Link>
         </li>
         <li className="p-1">
-          <Link className="text-lg font-semibold hover:text-blue-400" href="/">
+          <Link
+            className="text-lg font-semibold hover:text-blue-400"
+            href="/Cirurgias"
+          >
             Cirurgias
           </Link>
         </li>
         <li className="p-1">
-          <Link className="text-lg font-semibold hover:text-blue-400" href="/">
+          <Link
+            className="text-lg font-semibold hover:text-blue-400"
+            href="/Laser"
+          >
             Laser
           </Link>
         </li>
         <li className="p-1">
-          <Link className="text-lg font-semibold hover:text-blue-400" href="/">
+          <Link
+            className="text-lg font-semibold hover:text-blue-400"
+            href="/Aesthetics"
+          >
             Estética
           </Link>
         </li>
         <li className="p-1">
-          <Link className="text-lg font-semibold hover:text-blue-400" href="/">
+          <Link
+            className="text-lg font-semibold hover:text-blue-400"
+            href="/Videos"
+          >
             Videos
           </Link>
         </li>
         <li className="p-1">
-          <Link className="text-lg font-semibold hover:text-blue-400" href="/">
+          <Link
+            className="text-lg font-semibold hover:text-blue-400"
+            href="/Contato"
+          >
             Contato
           </Link>
         </li>

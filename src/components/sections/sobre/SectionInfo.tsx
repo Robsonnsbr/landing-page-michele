@@ -10,7 +10,9 @@ const SectionInfo = () => {
           <li className="col-span-2 row-span-1">
             <div className=" w-full h-fit">
               <Line style="bg-lineColor" />
-              <p className="p-2">Sobre</p>
+              <h1 className="p-2 text-xl text-left text-secondaryColor">
+                Sobre
+              </h1>
               <Image
                 src={imagemMichele}
                 width={500}
@@ -25,7 +27,7 @@ const SectionInfo = () => {
           <li className="col-span-3 row-span-1">
             <div className="w-full">
               <Line />
-              <div className="text-left max-w-2xl mx-auto my-4">
+              <div className="indent-6 text-justify text-sm max-w-2xl mx-auto my-4 tracking-normal text-secondaryColor">
                 <p className="pb-2">
                   Agradeço pelo tempo dedicado a visitar meu site. Quero nesta
                   oportunidade, passar a você algumas informações sobre minha
@@ -52,8 +54,8 @@ const SectionInfo = () => {
                   qualquer dúvida. Espero poder te ajudar na decisão que está
                   considerando tomar.
                 </p>
-                <p className="pb-2">Sinceramente</p>
-                <p className="pb-2">Dra. Michele Mocellin</p>
+                <p className="pb-2 indent-0">Sinceramente</p>
+                <p className="pb-2 indent-0">Dra. Michele Mocellin</p>
               </div>
             </div>
           </li>

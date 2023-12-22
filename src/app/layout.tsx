@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 import '@/styles/globals.css';
 import { NavBarMobile } from 'src/components/mobile';
 import { NavBar } from 'src/components/navBar';
+import Motion from 'src/components/common/Motion';
 
 interface children {
   children: React.ReactNode;
@@ -40,13 +41,15 @@ export default function RootLayout({ children }: children) {
         className={isValidFont() ? isValidFont()?.className : 'font-sans'}
       >
         <MobileProvider>
-          <div className="Wrapper-container">
-            <Header className="class-Header" />
-            <NavBar />
-            <NavBarMobile />
-            {children}
-            <Footer className="class-Footer" />
-          </div>
+          <Motion>
+            <div className="Wrapper-container">
+              <Header className="class-Header" />
+              <NavBar />
+              <NavBarMobile />
+              {children}
+              <Footer className="class-Footer" />
+            </div>
+          </Motion>
         </MobileProvider>
       </body>
     </html>

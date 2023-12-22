@@ -17,10 +17,10 @@ export const ButtonNavMobile: React.FC<ButtonNavMobileProps> = ({
   const styleButton = `
 ${
   isOpen
-    ? `flex sm:hidden relative  flex-col h-12 w-12 
+    ? `flex sm:hidden shadow-md relative  flex-col h-12 w-12 
 border-2 rounded-sm border-secondaryActiveColor border-opacity-100 
 bg-primaryColor bg-opacity-50 justify-center items-center group z-10`
-    : `flex sm:hidden relative  flex-col h-12 w-12 
+    : `flex sm:hidden shadow-md relative  flex-col h-12 w-12 
 border-2 rounded-sm border-black border-opacity-30 hover:border-opacity-70
 bg-black bg-opacity-25 justify-center items-center group z-10`
 }`;

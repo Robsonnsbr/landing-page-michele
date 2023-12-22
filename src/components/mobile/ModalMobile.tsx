@@ -3,13 +3,13 @@ import Link from 'next/link';
 interface ModalMobileProps {
   isOpen: boolean;
 }
-const styleNavMobileDisable = `top-0
+const styleNavMobileDisable = `top-0 shadow-md 
         absolute translate-y-14 -translate-x-3
         bg-primaryColor opacity-10 h-0 overflow-hidden
         transition-height duration-300 
         ease-in-out`;
 
-const styleNavMobileActive = `top-0
+const styleNavMobileActive = `top-0 shadow-md 
         absolute translate-y-14 -translate-x-5 
         bg-primaryColor bg-opacity-50 z-1 
         transition-height duration-300 

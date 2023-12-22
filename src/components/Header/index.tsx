@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from 'public/images/logo.png';
-import { NavBar } from '../navBar';
 // import { MobileContext } from 'src/context/MobileProvider';
 // import { useMobile } from 'src/context/MobileProvider';
 // import { useContext } from 'react';
@@ -38,7 +37,7 @@ export default function Header(props: { className: string }) {
           </div>
         </li>
         <li>
-          <div className="flex items-center justify-center pb-5">
+          <div className="flex items-center justify-center">
             <Image
               src={logo}
               width={400}
@@ -54,9 +53,6 @@ export default function Header(props: { className: string }) {
               <p className="text-secondaryColor pl-1">Cirurgiã Dentista</p>
             </div>
           </div>
-        </li>
-        <li>
-          <NavBar />
         </li>
       </ul>
     </header>

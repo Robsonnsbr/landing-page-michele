@@ -27,6 +27,8 @@ const FormPlain = () => {
         <div className="mb-2">
           <input
             type="text"
+            name="name"
+            id="name"
             placeholder="Nome"
             className="w-full  p-1 bg-primaryColor text-black"
             onChange={(e) => handleChange('nome', e.target.value)}
@@ -35,6 +37,8 @@ const FormPlain = () => {
         <div className="mb-2">
           <input
             type="email"
+            name="email"
+            id="email"
             placeholder="Email"
             className="w-full  p-1 bg-primaryColor text-black"
             onChange={(e) => handleChange('email', e.target.value)}
@@ -43,6 +47,8 @@ const FormPlain = () => {
         <div className="mb-2">
           <input
             type="text"
+            name="assunto"
+            id="assunto"
             placeholder="Assunto"
             className="w-full  p-1 bg-primaryColor text-black"
             onChange={(e) => handleChange('assunto', e.target.value)}
@@ -51,6 +57,8 @@ const FormPlain = () => {
         <div>
           <textarea
             placeholder="Mensagem"
+            name="mensagem"
+            id="mensagem"
             className="w-full text-area h-40 bg-primaryColor text-black p-1"
             onChange={(e) => handleChange('mensagem', e.target.value)}
           />
@@ -58,6 +66,8 @@ const FormPlain = () => {
         <div className="flex items-center justify-end">
           <button
             type="submit"
+            name="btn"
+            id="btn"
             className="bg-green-900 text-black py-1 px-2 focus:outline-none focus:shadow-outline z-5"
           >
             Enviar

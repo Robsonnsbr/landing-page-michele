@@ -9,6 +9,7 @@ const raleway = Raleway({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
 import '@/styles/globals.css';
 import { NavBarMobile } from 'src/components/mobile';
+import { NavBar } from 'src/components/navBar';
 
 interface children {
   children: React.ReactNode;
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: children) {
         <MobileProvider>
           <div className="Wrapper-container">
             <Header className="class-Header" />
+            <NavBar />
             <NavBarMobile />
             {children}
             <Footer className="class-Footer" />

@@ -10,7 +10,7 @@ const SectionAbout = () => {
           <li className="col-span-2 row-span-1">
             <div className=" w-full h-fit">
               <Line style="bg-lineColor" />
-              <h1 className="p-2 text-xl text-left text-secondaryColor">
+              <h1 className="p-2 text-2xl text-left text-secondaryColor">
                 Sobre
               </h1>
               <Image

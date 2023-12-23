@@ -2,6 +2,7 @@ import React from 'react';
 import Motion from 'src/components/common/Motion';
 
 import { Metadata } from 'next';
+import { SectionCirurgias } from 'src/components/sections/Cirurgias';
 
 export const metadata: Metadata = {
   title: {
@@ -15,7 +16,7 @@ function Cirurgias() {
       <main className="class-Main">
         <div className="grid grid-auto-rows-auto gap-4  pt-14">
           <section>
-            <h1>Cirurgias building...</h1>
+            <SectionCirurgias />
           </section>
         </div>
       </main>

@@ -1,6 +1,6 @@
 'use client';
-import Link from 'next/link';
 import React, { useRef, useEffect, useState } from 'react';
+import ActiveLink from '../common/ActiveLink';
 
 export const NavBar = () => {
   const navRef = useRef(null);
@@ -45,42 +45,57 @@ export const NavBar = () => {
     >
       <ul className="flex-col sm:grid grid-cols-7 gap-2 sm:max-w-xl m-auto">
         <li>
-          <Link className="text-base hover:text-blue-400" href="/">
+          <ActiveLink className="text-base hover:text-activeColor" href="/">
             Início
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link
-            className="text-base hover:text-blue-400 whitespace-nowrap"
+          <ActiveLink
+            className="text-base hover:text-activeColor whitespace-nowrap"
             href="/Sobre"
           >
             Sobre
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link className="text-base hover:text-blue-400" href="/Cirurgias">
+          <ActiveLink
+            className="text-base hover:text-activeColor"
+            href="/Cirurgias"
+          >
             Cirurgias
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link className="text-base hover:text-blue-400" href="/Laser">
+          <ActiveLink
+            className="text-base hover:text-activeColor"
+            href="/Laser"
+          >
             Laser
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link className="text-base hover:text-blue-400" href="/Aesthetics">
+          <ActiveLink
+            className="text-base hover:text-activeColor"
+            href="/Aesthetics"
+          >
             Estética
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link className="text-base hover:text-blue-400" href="/Videos">
+          <ActiveLink
+            className="text-base hover:text-activeColor"
+            href="/Videos"
+          >
             Videos
-          </Link>
+          </ActiveLink>
         </li>
         <li>
-          <Link className="text-base hover:text-blue-400" href="/Contato">
+          <ActiveLink
+            className="text-base hover:text-activeColor"
+            href="/Contato"
+          >
             Contato
-          </Link>
+          </ActiveLink>
         </li>
       </ul>
     </nav>

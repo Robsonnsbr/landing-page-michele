@@ -15,7 +15,8 @@ const config: Config = {
       },
       backgroundColor: {
         primaryColor: '#8ADDF0',
-        lineColor: '#527A97'
+        lineColor: '#527A97',
+        lineColor2: '#5C697B'
       },
       colors: {
         primaryColor: '#9FA4A5',

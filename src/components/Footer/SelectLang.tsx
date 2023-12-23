@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 
@@ -13,21 +12,39 @@ export default function SelectLang() {
   }
 
   return (
-    <div className="grid grid-col-2 md:grid-cols-2 w-full h-12 items-center text-black justify-end">
-      <div className="col-star-1 w-14 md:col-start-3 items-start">
+    <div className="grid grid-col-2 md:grid-cols-2 w-full h-12 items-center text-black justify-end gap-1">
+      <div className="col-star-1 h-10 md:col-start-3 items-start">
         {language === 'pt-BR' && (
-          <Image src={flagBR} width={52} height={36} alt="flag brasil" />
+          <Image
+            src={flagBR}
+            width={52}
+            height={36}
+            alt="flag brasil"
+            style={{ width: '100%', height: '100%' }}
+          />
         )}
         {language === 'en' && (
-          <Image src={flagEUA} width={52} height={36} alt="flag eua" />
+          <Image
+            src={flagEUA}
+            width={52}
+            height={36}
+            alt="flag eua"
+            style={{ width: '100%', height: '100%' }}
+          />
         )}
         {language === 'es' && (
-          <Image src={flagSPAN} width={52} height={36} alt="flag es" />
+          <Image
+            src={flagSPAN}
+            width={52}
+            height={36}
+            alt="flag es"
+            style={{ width: '100%', height: '100%' }}
+          />
         )}
       </div>
       <select
         id="language"
-        className="col-start-2 md:col-start-4 w-14 border rounded-sm md:w-auto h-9"
+        className="col-start-2 md:col-start-4 h-10 border rounded-sm md:w-auto"
         value={language}
         onChange={(e) => showSelected(e.target.value)}
       >

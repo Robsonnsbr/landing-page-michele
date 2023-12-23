@@ -23,8 +23,10 @@ const config: Config = {
         secondaryColor: '#1783B5',
         thirdColor: '#527AA4',
         readingText: '#007A97',
+        subColor: '#17839B',
         activeColor: '#8ADDF0',
-        secondaryActiveColor: '#475569'
+        secondaryActiveColor: '#475569',
+        noBlack: '#2A3E53'
       }
     }
   },

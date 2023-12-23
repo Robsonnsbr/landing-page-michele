@@ -30,7 +30,7 @@ export default function Header(props: { className: string }) {
         <li>
           <div className="flex justify-center md:justify-end">
             <Link href="/">
-              <span className="font-semibold text-lg">
+              <span className="font-medium text-lg text-noBlack">
                 Ligue: 41-99021-2931
               </span>
             </Link>
@@ -50,7 +50,7 @@ export default function Header(props: { className: string }) {
               <h1 className="text-4xl  font-light text-primaryColor">
                 Dra. Michele Moccelin
               </h1>
-              <p className="text-secondaryColor pl-1">Cirurgiã Dentista</p>
+              <p className="text-subColor pl-1">Cirurgiã Dentista</p>
             </div>
           </div>
         </li>

@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 
-// import flagBR from 'public/images/utils/Imagem-19@2x.png';
-//TODO: fix this flag, ela deve aparecer no lugar do nome.
+import { flagBR, flagEUA, flagSPAN } from '@/assets/utils/flags/index';
+// TODO: fix this flag, ela deve aparecer no lugar do nome.
 export default function SelectLang() {
   const [language, setLanguage] = useState('pt-BR');
 
@@ -15,9 +15,15 @@ export default function SelectLang() {
   return (
     <div className="grid grid-col-2 md:grid-cols-2 w-full h-12 items-center text-black justify-end">
       <div className="col-star-1 w-14 md:col-start-3 items-start">
-        {/* {language === 'pt-BR' && (
-          <Image src={flagBR} width={52} height={36} alt="bandeira do brasil" />
-        )} */}
+        {language === 'pt-BR' && (
+          <Image src={flagBR} width={52} height={36} alt="flag brasil" />
+        )}
+        {language === 'en' && (
+          <Image src={flagEUA} width={52} height={36} alt="flag eua" />
+        )}
+        {language === 'es' && (
+          <Image src={flagSPAN} width={52} height={36} alt="flag es" />
+        )}
       </div>
       <select
         id="language"
@@ -26,8 +32,8 @@ export default function SelectLang() {
         onChange={(e) => showSelected(e.target.value)}
       >
         <option value="pt-BR">BRA</option>
-        <option value="US">ENG</option>
-        <option value="spanish">ESP</option>
+        <option value="en">ENG</option>
+        <option value="es">ESP</option>
       </select>
     </div>
   );

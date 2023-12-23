@@ -18,7 +18,7 @@ const SectionInfo = () => {
                 width={500}
                 height={500}
                 placeholder="blur"
-                loading="lazy"
+                priority
                 style={{ width: '100%', height: '100%' }}
                 alt={'imagem-michele'}
               />

@@ -68,7 +68,7 @@ const SwiperCarousel = () => {
               height={1080}
               alt="image1"
               placeholder="blur"
-              loading="lazy"
+              priority
               style={{
                 width: '100%',
                 minHeight: 'auto',
@@ -85,7 +85,7 @@ const SwiperCarousel = () => {
               width={1920}
               height={1080}
               placeholder="blur"
-              loading="lazy"
+              priority
               alt="image4"
               style={{
                 width: '100%',
@@ -103,7 +103,7 @@ const SwiperCarousel = () => {
               width={1920}
               height={1080}
               placeholder="blur"
-              loading="lazy"
+              priority
               alt="image4"
               style={{
                 width: '100%',

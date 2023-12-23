@@ -1,6 +1,14 @@
 import React from 'react';
 import Motion from 'src/components/common/Motion';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Contato | michelemoccelin'
+  }
+};
+
 function Contato() {
   return (
     <Motion>

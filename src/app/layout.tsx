@@ -28,7 +28,10 @@ const isValidFont = () => {
 };
 
 export const metadata: Metadata = {
-  title: 'landing-page',
+  title: {
+    default: 'Michele Moccelin',
+    template: '%s | michelemoccelin'
+  },
   description: 'landing page Dr. Michele M.'
 };
 

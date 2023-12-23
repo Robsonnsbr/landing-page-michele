@@ -16,8 +16,8 @@ const SectionInfo = () => {
           <li className="col-span-1 row-span-1">
             <div className=" w-full h-fit ">
               <Line />
-              <p className="p-2">Bem-Vindos</p>
-              <p className="leading-relaxed text-readingText">
+              <p className="p-2 text-thirdColor">Bem-Vindos</p>
+              <p className="leading-relaxed text-thirdColor">
                 Informações sobre tratamentos ortodônticos, aparelhos,
                 alinhadores e muito mais. Opções para realizar seus sonhos de um
                 sorriso perfeito, com segurança e qualidade. Proporcionamos uma
@@ -69,7 +69,7 @@ const SectionInfo = () => {
               </div>
             </div>
           </li>
-          <li className="col-span-2 row-span-2">
+          <li className="col-span-2 row-span-1">
             <div className="w-full ">
               <Line />
               <p className="p-2">Tratamentos Estéticos</p>
@@ -82,7 +82,7 @@ const SectionInfo = () => {
                   loading="lazy"
                   alt="imagem tratamento"
                   style={{
-                    width: 'auto',
+                    width: '100%',
                     height: '100%',
                     objectFit: 'cover'
                   }}

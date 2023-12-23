@@ -1,3 +1,4 @@
+import SectionAbout from './SectionAbout';
 import SectionInfo from './SectionInfo';
 
-export { SectionInfo };
+export { SectionAbout, SectionInfo };

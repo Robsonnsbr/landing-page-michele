@@ -70,7 +70,7 @@ const FormPlain = () => {
             type="submit"
             name="btn"
             id="btn"
-            className="bg-green-900 text-black py-1 px-2 focus:outline-none focus:shadow-outline z-5"
+            className="bg-green-900 text-white py-1 px-2 focus:outline-none focus:shadow-outline z-5"
           >
             Enviar
           </button>

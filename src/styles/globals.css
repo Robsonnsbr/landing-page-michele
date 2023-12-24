@@ -19,6 +19,7 @@
 html, body {
   min-height: 100vh;
   max-height: fit-content;
+  overflow-x: hidden;
 }
 body {
   color: rgb(var(--foreground-rgb));

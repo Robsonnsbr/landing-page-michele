@@ -19,6 +19,7 @@ export default function SelectLang() {
             src={flagBR}
             width={52}
             height={36}
+            priority
             alt="flag brasil"
             style={{ width: '100%', height: '100%' }}
           />
@@ -28,6 +29,7 @@ export default function SelectLang() {
             src={flagEUA}
             width={52}
             height={36}
+            priority
             alt="flag eua"
             style={{ width: '100%', height: '100%' }}
           />
@@ -37,6 +39,7 @@ export default function SelectLang() {
             src={flagSPAN}
             width={52}
             height={36}
+            priority
             alt="flag es"
             style={{ width: '100%', height: '100%' }}
           />

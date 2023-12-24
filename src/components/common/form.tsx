@@ -30,6 +30,7 @@ const FormPlain = () => {
             name="name"
             id="name"
             placeholder="Nome"
+            autoComplete="true"
             className="w-full  p-1 bg-primaryColor text-black"
             onChange={(e) => handleChange('nome', e.target.value)}
           />
@@ -40,6 +41,7 @@ const FormPlain = () => {
             name="email"
             id="email"
             placeholder="Email"
+            autoComplete="true"
             className="w-full  p-1 bg-primaryColor text-black"
             onChange={(e) => handleChange('email', e.target.value)}
           />

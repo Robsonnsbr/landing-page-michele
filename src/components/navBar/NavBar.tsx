@@ -8,8 +8,8 @@ export const NavBar = () => {
 
   useEffect(() => {
     const options = {
-      root: null, // Usa o viewport como o contêiner de referência
-      rootMargin: '-8% 0px 0px 0px', // Quando o topo do elemento passar o topo da viewport
+      root: null,
+      rootMargin: '-8% 0px 0px 0px',
       threshold: 0
     };
 
@@ -39,9 +39,9 @@ export const NavBar = () => {
   return (
     <nav
       ref={navRef}
-      className={`${
-        isSticky && 'shadow-lg'
-      } hidden sm:block sm:sticky sm:m-auto bg-white bg-opacity-70  sm:py-3 top-0 z-20 `}
+      className={`hidden sm:block sm:sticky sm:m-auto bg-white bg-opacity-75  sm:py-3 top-0 z-20  ${
+        isSticky && 'transition-shadow shadow-lg md:max-w-[60%]'
+      }`}
     >
       <ul className="flex-col sm:grid grid-cols-7 gap-2 sm:max-w-xl m-auto">
         <li>

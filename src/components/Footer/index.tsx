@@ -4,7 +4,9 @@ import ListIcons from './ListIcons';
 
 function Footer(props: { className: string }) {
   return (
-    <footer className={`${props.className} flex justify-center`}>
+    <footer
+      className={`${props.className} flex-col items-center justify-between`}
+    >
       <ul className="grid grid-cols-1 md:grid-cols-4  sm:max-w-[80%] justify-between pt-16">
         <li>
           <ul className="md:grid text-center md:text-left gap-6">
@@ -79,6 +81,11 @@ function Footer(props: { className: string }) {
           </ul>
         </li>
       </ul>
+      <div className="sm:max-w-[80%] w-full text-left text-xs pb-4 text-thirdColor">
+        <span className="antialiased">
+          Content copyright 2023. Dra. Michele Moccelin. All rights reserved
+        </span>
+      </div>
     </footer>
   );
 }

@@ -39,6 +39,7 @@ const useViewportSize = () => {
 
 const SwiperCarousel = () => {
   const viewportSize = useViewportSize();
+  const [isMouseOver, setIsMouseOver] = useState(false);
 
   const swiperParams: SwiperOptions = {
     spaceBetween: 30,
@@ -47,7 +48,11 @@ const SwiperCarousel = () => {
       delay: 5000,
       disableOnInteraction: false
     },
-    navigation: true
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    speed: 2300
   };
 
   return (
@@ -58,8 +63,20 @@ const SwiperCarousel = () => {
         minHeight: 'auto',
         maxHeight: 280
       }}
+      onMouseEnter={() => setIsMouseOver(true)}
+      onMouseLeave={() => setIsMouseOver(false)}
     >
       <Swiper {...swiperParams} modules={[Navigation, Autoplay]}>
+        <div
+          className="swiper-buttons-container"
+          style={{
+            opacity: isMouseOver ? 1 : 0,
+            transition: 'opacity 0.3s ease-in-out'
+          }}
+        >
+          <button className="swiper-button-next" />
+          <button className="swiper-button-prev" />
+        </div>
         <SwiperSlide>
           <div className="w-full h-full overflow-hidden">
             <Image

@@ -1,4 +1,4 @@
-import { CirurgiasLinks } from 'src/components/common/CirurgiasLinks';
+import { CirurgiasLinks } from './CirurgiasLinks';
 
 const SectionLinks = () => {
   return (

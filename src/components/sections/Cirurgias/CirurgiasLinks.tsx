@@ -6,7 +6,7 @@ export const CirurgiasLinks = () => {
       <ul className="flex-col sm:grid grid-cols-1 grid-row-12 w-full text-base pt-4 gap-2 font-normal border-2rounded-sm border-secondaryActiveColor">
         <li className=" w-full">
           <Link className=" hover:text-blue-400" href="/">
-            <p className="">Cirurgia da Face</p>
+            Cirurgia da Face
           </Link>
         </li>
         <hr className="h-1 w-[95%] bg-primaryColor"></hr>

@@ -14,7 +14,7 @@ function Cirurgias() {
   return (
     <Motion>
       <main className="class-Main">
-        <div className="grid grid-auto-rows-auto gap-4  pt-14">
+        <div className="grid grid-auto-rows-auto gap-4  pt-10">
           <section>
             <SectionCirurgias />
           </section>

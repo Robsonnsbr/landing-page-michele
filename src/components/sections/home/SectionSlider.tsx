@@ -1,7 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
-import { image4, image5, image6 } from 'src/assets/images-slider';
+import { image4, image5, image6 } from 'public/assets/images-slider';
 import { useState, useEffect } from 'react';
 
 import { SwiperOptions } from 'swiper/types';

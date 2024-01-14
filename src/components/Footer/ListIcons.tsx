@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
-import youtubeIcon from 'public/images/icons/Icon awesome-youtube.svg';
-import instagramIcon from 'public/images/icons/Icon awesome-instagram.svg';
-import linkedinIcon from 'public/images/icons/Icon awesome-linkedin.svg';
-import facebookIcon from 'public/images/icons/Icon awesome-facebook-f.svg';
+import {
+  youTubeIcon,
+  faceBookIcon,
+  instagramIcon,
+  linkedInIcon
+} from 'public/assets/utils';
 import Image from 'next/image';
 
 function ListIcons() {
@@ -15,10 +17,10 @@ function ListIcons() {
       <li className="flex justify-center">
         <Link href="/">
           <Image
-            src={youtubeIcon}
+            src={youTubeIcon}
             width={50}
             height={40}
-            alt="ícone youtube"
+            alt="ícone youTube"
             style={{ width: 50, height: 40 }}
           />
         </Link>
@@ -37,10 +39,10 @@ function ListIcons() {
       <li className="flex justify-center">
         <Link href="/">
           <Image
-            src={facebookIcon}
+            src={faceBookIcon}
             width={50}
             height={40}
-            alt="ícone facebook"
+            alt="ícone faceBook"
             style={{ width: 50, height: 40 }}
           />
         </Link>
@@ -48,10 +50,10 @@ function ListIcons() {
       <li className="flex justify-center">
         <Link href="/">
           <Image
-            src={linkedinIcon}
+            src={linkedInIcon}
             width={50}
             height={40}
-            alt="ícone linkedin"
+            alt="ícone linkedIn"
             style={{ width: 50, height: 40 }}
           />
         </Link>

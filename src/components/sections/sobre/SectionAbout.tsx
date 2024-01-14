@@ -1,6 +1,6 @@
 import Line from '../../common/Line';
 import Image from 'next/image';
-import imagemMichele from '@/assets/imagens-sobre/imagem-michele.png';
+import imagemMichele from 'public/assets/imagens-sobre/imagem-michele.png';
 
 const SectionAbout = () => {
   return (

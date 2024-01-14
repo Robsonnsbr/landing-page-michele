@@ -1,6 +1,6 @@
 import Line from '../../common/Line';
 import Image from 'next/image';
-import { cirurgiasOtonto } from '@/assets/imagem-cirurgias/index';
+import { cirurgiasOdonto } from 'public/assets/imagem-cirurgias';
 import SectionLinks from './SectionLinks';
 
 const SectionCirurgias = () => {
@@ -15,7 +15,7 @@ const SectionCirurgias = () => {
                 Cirurgias Odontológicas
               </h1>
               <Image
-                src={cirurgiasOtonto}
+                src={cirurgiasOdonto}
                 width={1280}
                 height={720}
                 placeholder="blur"

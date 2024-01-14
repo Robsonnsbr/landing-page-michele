@@ -6,7 +6,7 @@ import {
   imageInfo2,
   imageInfo3,
   imageInfo4
-} from '@/assets/images-info-home';
+} from 'public/assets/images-info-home';
 
 const SectionInfo = () => {
   return (

@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from 'public/images/logo.png';
+import { logo } from 'public/assets/utils/';
 // import { MobileContext } from 'src/context/MobileProvider';
 // import { useMobile } from 'src/context/MobileProvider';
 // import { useContext } from 'react';

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import { flagBR, flagEUA, flagSPAN } from '@/assets/utils/flags/index';
+import { flagBR, flagEUA, flagSPAN } from 'public/assets/utils';
 // TODO: fix this flag, ela deve aparecer no lugar do nome.
 export default function SelectLang() {
   const [language, setLanguage] = useState('pt-BR');

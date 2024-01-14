@@ -2,9 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* initial styles project landingPage */
 /* TODO: Verificar real necessidade do @mediaQ abaixo, caso não haja remover */
 /* TODO: Inicial o @mediaQ do body após finalizar projeto ou até sair da parte do body */
+
+/* reset and initial styles project */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +25,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
 html, body {
   min-height: 100vh;
   max-height: fit-content;
@@ -36,7 +45,7 @@ body {
     overflow-x: hidden;   /* TODO: caso o navBar pare de funcionar ajustar o overflow em um container */
 }
 
-/* plus styles project landingPage */
+/* plus styles project */
 
 :root {
   --primary-background: #FFF;

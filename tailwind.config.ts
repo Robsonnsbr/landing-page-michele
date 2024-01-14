@@ -26,7 +26,8 @@ const config: Config = {
         subColor: '#17839B',
         activeColor: '#8ADDF0',
         secondaryActiveColor: '#475569',
-        noBlack: '#2A3E53'
+        noBlack: '#2A3E53',
+        errorColor: '#F00'
       }
     }
   },

@@ -1,5 +1,5 @@
 import Line from '../../common/Line';
-import FormPlain from '../../common/form';
+import { FormPlain } from '../../common/form';
 import Image from 'next/image';
 import {
   imageInfo1,

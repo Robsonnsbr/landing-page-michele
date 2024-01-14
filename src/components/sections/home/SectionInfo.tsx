@@ -1,4 +1,4 @@
-import Line from '../../common/Line';
+import LineTop from '../../common/LineTop';
 import { FormPlain } from '../../common/form';
 import Image from 'next/image';
 import {
@@ -15,7 +15,7 @@ const SectionInfo = () => {
         <ul className="flex-col sm:grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-2 sm:gap-8">
           <li className="col-span-1 row-span-1">
             <div className=" w-full h-fit ">
-              <Line />
+              <LineTop />
               <p className="p-2 text-thirdColor">Bem-Vindos</p>
               <p className="leading-relaxed text-thirdColor">
                 Informações sobre tratamentos ortodônticos, aparelhos,
@@ -29,7 +29,7 @@ const SectionInfo = () => {
           </li>
           <li className="col-span-1 row-span-1">
             <div className="w-full ">
-              <Line />
+              <LineTop />
               <p className="p-2">Tratamentos a Laser</p>
               <div className="flex h-64  items-center justify-center m-auto">
                 <Image
@@ -50,7 +50,7 @@ const SectionInfo = () => {
           </li>
           <li className="col-span-2 row-span-1">
             <div className="w-full ">
-              <Line />
+              <LineTop />
               <p className="p-2">Cirurgias odontológicas</p>
               <div className="flex h-64 items-center justify-center m-auto">
                 <Image
@@ -71,7 +71,7 @@ const SectionInfo = () => {
           </li>
           <li className="col-span-2 row-span-1">
             <div className="w-full ">
-              <Line />
+              <LineTop />
               <p className="p-2">Tratamentos Estéticos</p>
               <div className="flex  h-56 items-center justify-center m-auto">
                 <Image
@@ -92,7 +92,7 @@ const SectionInfo = () => {
           </li>
           <li className="col-span-1 row-span-1">
             <div className="w-full ">
-              <Line />
+              <LineTop />
               <p className="p-2">Atendimento Imparcial</p>
               <div className="flex  h-56 items-center justify-center m-auto">
                 <Image
@@ -113,7 +113,7 @@ const SectionInfo = () => {
           </li>
           <li className="col-span-1 row-span-1">
             <div className="w-full ">
-              <Line />
+              <LineTop />
               <p className="p-2">Contato e dúvidas</p>
               <FormPlain />
             </div>

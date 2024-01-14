@@ -1,4 +1,4 @@
-import Line from '../../common/Line';
+import LineTop from '../../common/LineTop';
 import Image from 'next/image';
 import { cirurgiasOdonto } from 'public/assets/imagem-cirurgias';
 import SectionLinks from './SectionLinks';
@@ -10,7 +10,7 @@ const SectionCirurgias = () => {
         <ul className="flex-col sm:grid grid-cols-2 lg:grid-cols-6 gap-2 sm:gap-8">
           <li className="col-span-4 row-span-1">
             <div className=" w-full h-fit">
-              <Line style="bg-lineColor" />
+              <LineTop styleProps="bg-lineColor" />
               <h1 className="p-2 text-2xl text-left text-secondaryColor">
                 Cirurgias Odontológicas
               </h1>
@@ -27,7 +27,7 @@ const SectionCirurgias = () => {
           </li>
           <li className="col-span-2 row-span-1">
             <div className="w-full">
-              <Line />
+              <LineTop />
               <div className="indent-6 text-justify text-base max-w-2xl mx-auto my-4 tracking-normal text-thirdColor">
                 <SectionLinks />
               </div>

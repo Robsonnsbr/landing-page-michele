@@ -1,4 +1,4 @@
-import Line from '../../common/Line';
+import LineTop from '../../common/LineTop';
 import Image from 'next/image';
 import imagemMichele from 'public/assets/imagens-sobre/imagem-michele.png';
 
@@ -9,7 +9,7 @@ const SectionAbout = () => {
         <ul className="flex-col sm:grid grid-cols-2 lg:grid-cols-5 gap-2 sm:gap-8">
           <li className="col-span-2 row-span-1">
             <div className=" w-full h-fit">
-              <Line style="bg-lineColor" />
+              <LineTop styleProps="bg-lineColor" />
               <h1 className="p-2 text-2xl text-left text-secondaryColor">
                 Sobre
               </h1>
@@ -26,7 +26,7 @@ const SectionAbout = () => {
           </li>
           <li className="col-span-3 row-span-1">
             <div className="w-full">
-              <Line />
+              <LineTop />
               <div className="indent-6 text-justify text-base max-w-2xl mx-auto my-4 tracking-normal text-thirdColor">
                 <p className="pb-2">
                   Agradeço pelo tempo dedicado a visitar meu site. Quero nesta

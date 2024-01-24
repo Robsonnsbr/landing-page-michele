@@ -112,7 +112,7 @@ const SectionInfo = () => {
             </div>
           </li>
           <li className="col-span-1 row-span-1">
-            <div className="w-full ">
+            <div className="w-full">
               <LineTop />
               <p className="p-2">Contato e dúvidas</p>
               <FormPlain />

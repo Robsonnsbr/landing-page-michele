@@ -4,7 +4,9 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ButtonSend } from './Button';
-import { RiSendPlane2Fill } from 'react-icons/ri';
+import { MdSendToMobile } from 'react-icons/md';
+import { BsCheck2All } from 'react-icons/bs';
+import { useState } from 'react';
 
 const schema = z.object({
   name: z.string().min(3, 'nome inválido!'),
@@ -12,6 +14,14 @@ const schema = z.object({
   subject: z.string().min(10, 'assunto inválido!'),
   msg: z.string().min(15, 'mensagem inválida!')
 });
+
+//TODO: Add evento para press key == 'enter'
+// const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+//   if (event.key === 'Enter') {
+//     // Adicione aqui a lógica que deseja executar ao pressionar Enter
+//     console.log('Enter key pressed');
+//   }
+// };
 
 export const FormSimple = () => {
   const {
@@ -30,6 +40,7 @@ export const FormSimple = () => {
       msg: ''
     }
   });
+  const [isWasSend, setIsWasSend] = useState(false);
 
   //TODO: Apagar essa function when the  send is ready
   const simulateDelayedRequest = async () => {
@@ -38,6 +49,10 @@ export const FormSimple = () => {
         console.log('Simulated request completed');
         resolve('success');
         reset();
+        setIsWasSend(true);
+        setTimeout(() => {
+          setIsWasSend(false);
+        }, 5000);
       }, 3000);
     });
   };
@@ -52,14 +67,17 @@ export const FormSimple = () => {
     <>
       <div className={`w-full max-w-md mx-auto mb-2 relative`}>
         {isSubmitting && (
-          <RiSendPlane2Fill
+          <MdSendToMobile
             size={40}
-            className="absolute top-1/3 left-1/3 transform -translate-y-1/4 -translate-x-1/4 animate-ping"
+            color="white"
+            className="absolute top-24 left-24  -translate-x-5 ease-in-out animate-ping z-20"
           />
         )}
         <form
           onSubmit={handleSubmit(handleSubmitForm)}
-          className={`${isSubmitting && 'opacity-50'}`}
+          className={`transition-opacity ease-in-out duration-500 ${
+            isSubmitting ? 'opacity-50' : 'opacity-100'
+          }`}
         >
           <div className="mb-2">
             <input
@@ -120,7 +138,19 @@ export const FormSimple = () => {
               <p className="text-errorColor text-sm">{errors.msg.message}</p>
             )}
           </div>
-          <div className="flex items-center justify-end">
+          <div className="flex items-center justify-end relative">
+            <div
+              className={`text-green-600 absolute top-0 left-0 flex items-center gap-1 transition-opacity ease-in-out duration-500 ${
+                isWasSend ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <span>Enviado!</span>
+              <BsCheck2All
+                size={20}
+                color="green"
+                style={{ verticalAlign: 'middle' }}
+              />
+            </div>
             <ButtonSend isSubmitting={isSubmitting} />
           </div>
         </form>

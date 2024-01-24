@@ -36,7 +36,11 @@ export const ButtonSend: React.FC<ButtonProps> = ({
 }) => {
   const { firstAction, secondaryAction } = actionsNames;
   return (
-    <div className={`${isSubmitting && 'opacity-50'}`}>
+    <div
+      className={`transition-opacity ease-in-out duration-500 ${
+        isSubmitting ? 'opacity-50' : 'opacity-100'
+      }`}
+    >
       <button
         type="submit"
         name="btnSend"

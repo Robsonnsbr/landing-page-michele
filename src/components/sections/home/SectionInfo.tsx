@@ -1,5 +1,5 @@
 import LineTop from '../../common/LineTop';
-import { FormPlain } from '../../common/form';
+import { FormSimple } from '../../common/FormSimple';
 import Image from 'next/image';
 import {
   imageInfo1,
@@ -115,7 +115,7 @@ const SectionInfo = () => {
             <div className="w-full">
               <LineTop />
               <p className="p-2">Contato e dúvidas</p>
-              <FormPlain />
+              <FormSimple />
             </div>
           </li>
         </ul>

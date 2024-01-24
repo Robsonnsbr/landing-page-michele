@@ -3,7 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Button } from './Button';
+import { ButtonSend } from './Button';
 import { RiSendPlane2Fill } from 'react-icons/ri';
 
 const schema = z.object({
@@ -13,7 +13,7 @@ const schema = z.object({
   msg: z.string().min(15, 'mensagem inválida!')
 });
 
-export const FormPlain = () => {
+export const FormSimple = () => {
   const {
     handleSubmit,
     register,
@@ -121,7 +121,7 @@ export const FormPlain = () => {
             )}
           </div>
           <div className="flex items-center justify-end">
-            <Button isSubmitting={isSubmitting} />
+            <ButtonSend isSubmitting={isSubmitting} />
           </div>
         </form>
       </div>

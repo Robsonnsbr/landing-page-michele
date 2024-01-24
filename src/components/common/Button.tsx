@@ -29,7 +29,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isSubmitting: boolean;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const ButtonSend: React.FC<ButtonProps> = ({
   actionsNames = { firstAction: 'Enviar', secondaryAction: 'Enviando...' },
   isSubmitting = false,
   ...props

@@ -36,27 +36,23 @@ export const ButtonSend: React.FC<ButtonProps> = ({
 }) => {
   const { firstAction, secondaryAction } = actionsNames;
   return (
-    <div
+    <button
+      type="submit"
+      name="btnSend"
+      id="btnSend"
+      disabled={isSubmitting}
       className={`transition-opacity ease-in-out duration-500 ${
         isSubmitting ? 'opacity-50' : 'opacity-100'
+      } ${
+        props.className
+          ? props.className
+          : 'bg-green-900 text-white py-1 px-2 focus:outline-none focus:shadow-outline z-10 '
       }`}
+      {...props}
     >
-      <button
-        type="submit"
-        name="btnSend"
-        id="btnSend"
-        disabled={isSubmitting}
-        className={`${
-          props.className
-            ? props.className
-            : 'bg-green-900 text-white py-1 px-2 focus:outline-none focus:shadow-outline z-5'
-        }`}
-        {...props}
-      >
-        <span className="text-white">
-          {isSubmitting ? secondaryAction : firstAction}
-        </span>
-      </button>
-    </div>
+      <span className="text-white">
+        {isSubmitting ? secondaryAction : firstAction}
+      </span>
+    </button>
   );
 };

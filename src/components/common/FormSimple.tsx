@@ -9,10 +9,25 @@ import { BsCheck2All } from 'react-icons/bs';
 import { useState } from 'react';
 
 const schema = z.object({
-  name: z.string().min(3, 'nome inválido!'),
-  email: z.string().email('email inválido!').toLowerCase(),
-  subject: z.string().min(10, 'assunto inválido!'),
-  msg: z.string().min(15, 'mensagem inválida!')
+  name: z
+    .string()
+    .min(2, 'nome é obrigatório')
+    .transform((name) => {
+      return name
+        .trim()
+        .split(' ')
+        .map((word) => {
+          return word[0].toLocaleUpperCase().concat(word.substring(1));
+        })
+        .join(' ');
+    }),
+  email: z
+    .string()
+    .min(1, 'email é obrigatório')
+    .email('Email inválido!')
+    .toLowerCase(),
+  subject: z.string().min(7, 'assunto inválido!'),
+  msg: z.string().min(22, 'mensagem inválida!')
 });
 
 //TODO: Add evento para press key == 'enter'
@@ -83,7 +98,6 @@ export const FormSimple = () => {
             <input
               {...register('name')}
               type="text"
-              name="name"
               id="name"
               placeholder="Nome"
               autoComplete="true"
@@ -98,7 +112,6 @@ export const FormSimple = () => {
             <input
               {...register('email')}
               type="email"
-              name="email"
               id="email"
               placeholder="Email"
               autoComplete="true"
@@ -113,7 +126,6 @@ export const FormSimple = () => {
             <input
               {...register('subject')}
               type="text"
-              name="subject"
               id="subject"
               placeholder="Assunto"
               className="w-full  p-1 bg-primaryColor text-black"
@@ -128,10 +140,9 @@ export const FormSimple = () => {
           <div className="mb-2">
             <textarea
               {...register('msg')}
-              name="msg"
               id="msg"
               placeholder="Mensagem"
-              className="w-full text-area h-40 bg-primaryColor text-black -mb-2"
+              className="w-full p-1 text-area h-40 bg-primaryColor text-black  -mb-2"
               disabled={isSubmitting}
             />
             {errors.msg && (
@@ -144,7 +155,7 @@ export const FormSimple = () => {
                 isWasSend ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <span>Enviado</span>
+              <span>Sucesso no envio</span>
               <BsCheck2All
                 size={20}
                 color="green"

@@ -4,13 +4,13 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ButtonSend } from './Button';
-import { MdSendToMobile } from 'react-icons/md';
+import { RiMailSendLine } from 'react-icons/ri';
 import { BsCheck2All } from 'react-icons/bs';
 import { useState } from 'react';
 
 const schema = z.object({
   name: z.string().min(3, 'nome inválido!'),
-  email: z.string().email('email inválido!'),
+  email: z.string().email('email inválido!').toLowerCase(),
   subject: z.string().min(10, 'assunto inválido!'),
   msg: z.string().min(15, 'mensagem inválida!')
 });
@@ -67,10 +67,10 @@ export const FormSimple = () => {
     <>
       <div className={`w-full max-w-md mx-auto mb-2 relative`}>
         {isSubmitting && (
-          <MdSendToMobile
+          <RiMailSendLine
             size={40}
             color="black"
-            className="absolute top-24 left-24  -translate-x-5 ease-in-out animate-ping z-20"
+            className="absolute top-1/3 left-1/2  -translate-x-14 ease-in-out animate-ping z-20"
           />
         )}
         <form
@@ -144,7 +144,7 @@ export const FormSimple = () => {
                 isWasSend ? 'opacity-100' : 'opacity-0'
               }`}
             >
-              <span>Enviado!</span>
+              <span>Enviado</span>
               <BsCheck2All
                 size={20}
                 color="green"

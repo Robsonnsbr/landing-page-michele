@@ -46,7 +46,7 @@ export const ButtonSend: React.FC<ButtonProps> = ({
       } ${
         props.className
           ? props.className
-          : 'bg-green-900 text-white py-1 px-2 focus:outline-none focus:shadow-outline z-10 '
+          : 'bg-green-900 text-white py-1 px-2 focus:outline-none focus:shadow-outline z-20'
       }`}
       {...props}
     >

@@ -69,7 +69,7 @@ export const FormSimple = () => {
         {isSubmitting && (
           <MdSendToMobile
             size={40}
-            color="white"
+            color="black"
             className="absolute top-24 left-24  -translate-x-5 ease-in-out animate-ping z-20"
           />
         )}

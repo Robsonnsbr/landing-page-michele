@@ -39,7 +39,7 @@ export const NavBar = () => {
   return (
     <nav
       ref={navRef}
-      className={`hidden sm:block sm:sticky sm:m-auto bg-white bg-opacity-75  sm:py-3 top-0 z-20  ${
+      className={`hidden sm:block sm:sticky sm:m-auto bg-white bg-opacity-75  sm:py-3 top-0 z-30  ${
         isSticky && 'transition-shadow shadow-lg md:max-w-[60%]'
       }`}
     >

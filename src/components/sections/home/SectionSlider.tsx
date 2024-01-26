@@ -63,14 +63,13 @@ const SwiperCarousel = () => {
       }}
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
+      onClick={() => setIsMouseOver(true)}
     >
       <Swiper {...swiperParams} modules={[Navigation, Autoplay]}>
         <div
-          className="swiper-buttons-container"
-          style={{
-            opacity: isMouseOver ? 1 : 0,
-            transition: 'opacity 0.3s ease-in-out'
-          }}
+          className={`transition-transform ease-in-out duration-300 ${
+            isMouseOver ? 'opacity-100' : 'opacity-0'
+          }`}
         >
           <button className="swiper-button-next" />
           <button className="swiper-button-prev" />

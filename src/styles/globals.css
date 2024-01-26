@@ -42,7 +42,8 @@ body {
     font-size: 16px;
     font-weight: normal;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); 
-    overflow-x: hidden;   /* TODO: caso o navBar pare de funcionar ajustar o overflow em um container */
+    overflow-x: hidden;   /*TODO: caso o navBar pare de funcionar ajustar o overflow em um container */
+    overscroll-behavior: none;
 }
 
 /* plus styles project */

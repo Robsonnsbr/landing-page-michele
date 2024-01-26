@@ -14,57 +14,57 @@ export const ModalMobile = ({ isOpen }: ModalMobileProps) => {
       }`}
     >
       <ul className="flex-col sm:grid grid-cols-7 w-full text-center border-2rounded-sm border-secondaryActiveColor">
-        <li className="p-1">
+        <li>
           <Link className="text-lg font-semibold hover:text-blue-400" href="/">
-            <p>Início</p>
+            <p className="p-1">Início</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400 whitespace-nowrap"
             href="/Sobre"
           >
-            Sobre
+            <p className="p-1">Sobre</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400"
             href="/Cirurgias"
           >
-            Cirurgias
+            <p className="p-1">Cirurgias</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400"
             href="/Laser"
           >
-            Laser
+            <p className="p-1">Laser</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400"
             href="/Aesthetics"
           >
-            Estética
+            <p className="p-1">Estética</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400"
             href="/Videos"
           >
-            Videos
+            <p className="p-1">Vídeos</p>
           </Link>
         </li>
-        <li className="p-1">
+        <li>
           <Link
             className="text-lg font-semibold hover:text-blue-400"
             href="/Contato"
           >
-            Contato
+            <p className="p-1">Contato</p>
           </Link>
         </li>
       </ul>

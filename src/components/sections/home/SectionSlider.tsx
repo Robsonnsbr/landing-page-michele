@@ -3,13 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { image4, image5, image6 } from 'public/assets/images-slider';
 import { useState, useEffect } from 'react';
+import './style/slider.css';
 
 import { SwiperOptions } from 'swiper/types';
 
 import Image from 'next/image';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
 
 const useViewportSize = () => {
   const [viewportSize, setViewportSize] = useState({ width: 0 });

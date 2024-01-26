@@ -45,7 +45,7 @@ export default function RootLayout({ children }: children) {
       >
         <MobileProvider>
           <Motion>
-            <div className="Wrapper-container">
+            <div className="class-primary-Wrapper">
               <Header className="class-Header" />
               <NavBar />
               <NavBarMobile />

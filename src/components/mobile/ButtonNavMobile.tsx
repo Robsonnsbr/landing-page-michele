@@ -15,7 +15,7 @@ export const ButtonNavMobile: React.FC<ButtonNavMobileProps> = ({
   return (
     <button
       {...rest}
-      className={`class-button-mobile-default bg-opacity-30 hover:bg-opacity-50 ${
+      className={`class-button-mobile-default bg-opacity-30 group ${
         isOpen ? 'bg-primaryColor' : 'bg-noBlack'
       }`}
       onClick={handleClick}
@@ -25,7 +25,11 @@ export const ButtonNavMobile: React.FC<ButtonNavMobileProps> = ({
           isOpen && 'class-hamburger-line-rotate'
         }`}
       />
-      <div className={`${'class-hamburger-line'} ${isOpen && 'opacity-0'}`} />
+      <div
+        className={`${'class-hamburger-line'} ${
+          isOpen && 'class-hamburger-line-none'
+        }`}
+      />
       <div
         className={`${'class-hamburger-line'} ${
           isOpen && 'class-hamburger-line-rotate-negative'

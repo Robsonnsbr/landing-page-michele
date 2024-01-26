@@ -11,7 +11,7 @@ export const NavBarMobile = () => {
   };
 
   return (
-    <nav className="flex justify-end w-full pr-2 sticky top-0 z-30">
+    <nav className="flex w-fit p-2 sticky top-0 left-full z-30">
       <ButtonNavMobile isOpen={isOpen} handleClick={handleClick}>
         <ModalMobile isOpen={isOpen} />
       </ButtonNavMobile>

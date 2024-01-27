@@ -36,7 +36,7 @@ const useViewportSize = () => {
 };
 
 const SwiperCarousel = () => {
-  const viewportSize = useViewportSize();
+  const viewPortSize = useViewportSize().width;
   const [isMouseOver, setIsMouseOver] = useState(false);
 
   const swiperParams: SwiperOptions = {
@@ -52,14 +52,11 @@ const SwiperCarousel = () => {
     },
     speed: 2300
   };
-
   return (
     <div
-      className="flex mx-auto overflow-hidden"
+      className={`class-container-swiper`}
       style={{
-        maxWidth: viewportSize.width,
-        minHeight: 'auto',
-        maxHeight: 280
+        maxWidth: viewPortSize
       }}
       onMouseEnter={() => setIsMouseOver(true)}
       onMouseLeave={() => setIsMouseOver(false)}
@@ -75,7 +72,7 @@ const SwiperCarousel = () => {
           <button className="swiper-button-prev" />
         </div>
         <SwiperSlide>
-          <div className="w-full h-full overflow-hidden">
+          <div className="class-container-slider-image">
             <Image
               src={image4}
               width={1920}
@@ -83,17 +80,11 @@ const SwiperCarousel = () => {
               alt="image1"
               placeholder="blur"
               priority
-              style={{
-                width: '100%',
-                minHeight: 'auto',
-                maxHeight: 280,
-                objectFit: 'cover'
-              }}
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full overflow-hidden">
+          <div className="class-container-slider-image">
             <Image
               src={image5}
               width={1920}
@@ -101,17 +92,11 @@ const SwiperCarousel = () => {
               placeholder="blur"
               priority
               alt="image4"
-              style={{
-                width: '100%',
-                minHeight: 'auto',
-                maxHeight: 280,
-                objectFit: 'cover'
-              }}
             />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full overflow-hidden">
+          <div className="class-container-slider-image">
             <Image
               src={image6}
               width={1920}
@@ -119,12 +104,6 @@ const SwiperCarousel = () => {
               placeholder="blur"
               priority
               alt="image4"
-              style={{
-                width: '100%',
-                minHeight: 'auto',
-                maxHeight: 280,
-                objectFit: 'cover'
-              }}
             />
           </div>
         </SwiperSlide>
